@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+:root {
+  --primary-color: #3a3a3a;
+  --secondary-color: #63C3D1;
+  --background-color: #FBFEF9;
+  --accent-color: #c0392b;
+  --yellow-color: #FFDE00;
+  --violet-color: #482683;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+body {
+  font-family: "Bariol Bold", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-size: 2rem;
+  background-color:  var(--background-color);
+  color: var(--primary-color);
+}
+
+
+/*JAVASCRIPT*/
+
+.js [data-slide] {
+  position: relative;
+}
+
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: ease-in 1000ms;
+}
+
+.js [data-slide-nav] .quote {
+  width: 30%;
+  text-align: end;
+  background-color: lightcoral;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.4rem;
+  border: none;
+  padding: 0rem;
+  border-radius: 50%;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #c1c1c1;
+}
+
+.js [data-slide-nav] button.active {
+  background: #3a3a3a;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -2rem, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: ease-in-out 800ms;
+}
