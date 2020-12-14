@@ -160,7 +160,7 @@ div.banner {
   height: 50rem;
   width: 100%;
   background-image: linear-gradient(rgba(48, 48, 48, 0.5), rgba(48, 48, 48, 0.5)),
-  url("/images/foto1.jpg");
+  url("images/foto1.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position: center;
