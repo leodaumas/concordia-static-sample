@@ -13,10 +13,20 @@ h1, p {
 }
 
 nav {
-  width: 1380px;
-  height: 13rem;
-  margin: 1rem;
+  font-size: 1.8rem;
   box-shadow: 0.0rem 0.0rem 0.0rem 0.0rem rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  display: none;
+}
+
+.menu a {
+  display: none;
+}
+
+header {
+  margin: 0rem 0 1rem 0;
 }
 
 .chevron-menu {
@@ -34,7 +44,7 @@ nav {
 }
 
 .titre-page {
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 .topmenu {
@@ -46,7 +56,6 @@ nav {
   height: 3rem;
   justify-content: flex-start;
   align-content: center;
-
 }
 
 .logo img {
@@ -54,11 +63,10 @@ nav {
 }
 
 .search-menu {
-  width: 1350px;
   justify-content: flex-end;
   margin-left: 1rem;
   align-items: center;
-  margin-top: -2rem;
+  padding-right: 2rem;
 }
 
 .search-menu div {
@@ -97,7 +105,7 @@ nav {
 .dropdownmenu a {
 	color:var(--primary-color);
 	display: block;
-	padding: 1rem 2.5rem;
+	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition: all .25s ease;
@@ -131,9 +139,6 @@ nav {
 li:hover ul#submenu {
 	opacity: 1;	
 	visibility: visible;
-}
-
-#submenu:hover {
 }
 
 #submenu li {
@@ -180,14 +185,20 @@ div.banner div {
 
 div.banner div p {
   margin-bottom: 4rem;
+  font-size: 2rem;
 }
 
 .container {
-  width: 1360px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.content {
+  width: 1360px;
+}
+
+
 
 
 /*logo-description*/
@@ -264,7 +275,11 @@ div.je-souhaite div p {
 }
 
 .blog-coup-de-coeur div {
-  margin: 1rem;
+  margin-left: 1rem;
+}
+
+.blog-coup-de-coeur div:first-child {
+  margin-left: 0rem;
 }
 
 .blog-coup-de-coeur div img {
@@ -367,7 +382,6 @@ div.je-souhaite div p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 136rem
 }
 
 .d-flex-begin {
@@ -462,9 +476,201 @@ footer button {
     color: var(--background-color);
     font-family: Helvetica, sans-serif;
     font-size: 1.6rem;
+    padding: 3rem 0 3rem 0;
 }
 
-.sommes-membres {
+.sommes-membres h3 {
   font-size: 3rem;
-  font-weight: 900;
+  font-family: "Bariol Bold", Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.2rem;
+}
+
+
+@media(max-width: 1360px) {
+
+  .content {
+    width: 1100px;
+  }
+
+  .logo img {
+    height: 9rem;
+  }
+ 
+}
+
+@media(max-width: 1300px) {
+  .blog-coup-de-coeur {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .blog-coup-de-coeur  div {
+    margin-top: 5rem;
+    margin-left: 0;
+  }
+  
+  .blog-coup-de-coeur div:first-child {
+    margin-top: 0rem;
+  }
+
+  .carte {
+    height: 50rem;
+  }
+}
+
+@media(max-width: 1100px) {
+
+  .content {
+    width: 100%;
+  padding: 0 2rem 0 2rem;
+  }
+  
+  .logo {
+    height: 8rem;
+  }
+
+  .logo img {
+    height: 8rem;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: inherit;
+    align-items: center;
+  }
+
+  .menu a {
+    display: inherit;
+  }
+
+  header .menu.open {
+    position: fixed;
+    z-index: 2;
+    top: 2.7rem;
+    right: 2rem;
+  }
+
+  header .menu.open + nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: var(--background-color);
+  }
+
+  .navigation {
+   padding-top: 10rem; 
+  }
+
+  .dropdownmenu {
+    flex-direction: column;
+  }
+
+  .search-menu {
+    flex-direction: column;
+  }
+
+  .search-menu div:first-child {
+    padding-bottom: 1rem;
+  }
+
+  .dropdownmenu li {
+    width: 30rem;
+  }
+
+  .description-chiffres {
+    flex-direction: column;
+  }
+
+  .chiffres {
+    order: 2;
+    align-self: center;
+  }
+
+  .description-accueil {
+    max-width: 100vw;
+  }
+
+  .font-size6 {
+    font-size: 4rem;
+  }
+
+  div.je-souhaite div p {
+    font-size: 2rem;
+  }
+
+  div.je-souhaite div div {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  div.je-souhaite div div img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+ 
+  
+
+}
+
+@media(max-width: 970px) {
+  .jesouhaite {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carte-sengager-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+
+  footer div.d-flex {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+@media(max-width: 720px) {
+  .chiffres-titres {
+    flex-direction: column;
+  }
+
+  
+  div.je-souhaite div div {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  div.je-souhaite div div img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .partners-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }

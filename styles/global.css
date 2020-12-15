@@ -30,11 +30,16 @@ html {
   }
 }
 
+@font-face {
+  font-family: "Bariol Bold";
+  src: url("../font/Bariol_Bold.otf");
+}
+
 body {
-  font-family: "Bariol Bold", Helvetica, sans-serif;
+  font-family: "Bariol", "Bariol Bold", Helvetica, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  font-size: 2rem;
+  font-size: 1.6rem;
   background-color:  var(--background-color);
   color: var(--primary-color);
 }

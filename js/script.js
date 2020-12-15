@@ -1,5 +1,6 @@
 const text = document.querySelectorAll(".text");
 const changeChevron = document.querySelectorAll(".changeChevron");
+const menu = document.querySelector('.menu');
 
 for (let i = 0; i < changeChevron.length; i++) {
 	changeChevron[i].addEventListener("click", function() {
@@ -20,3 +21,7 @@ if(window.SimpleSlide) {
 if(window.SimpleSlide) {
 	new SimpleAnime();
 }
+
+menu.addEventListener('click', function() {
+	this.classList.toggle('open');
+});
