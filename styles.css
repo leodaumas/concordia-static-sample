@@ -67,6 +67,7 @@ header {
   margin-left: 1rem;
   align-items: center;
   padding-right: 2rem;
+  padding-top: 2rem;
 }
 
 .search-menu div {
@@ -220,19 +221,7 @@ div.chiffres {
   text-align: left;
 }
 
-.description-accueil p::first-line {
-  text-indent: 6rem; 
-}
-
 /*fin de logo-description*/
-
-.cortest {
-  background-color: blueviolet;
-}
-
-.cortest2 {
-  background-color: aquamarine;
-}
 
 .margin1rem {
   margin: 1rem;
@@ -241,6 +230,8 @@ div.chiffres {
 .container-je-souhaite h1 {
   text-align: center;
 }
+
+
 
 div.je-souhaite div div {
   width: 20rem;
@@ -263,7 +254,7 @@ div.je-souhaite div div img {
 }
 
 div.je-souhaite div p {
-  font-size: 3rem;
+  font-size: 2rem;
   width: 35rem;
   word-wrap: break-word;
 }
@@ -341,6 +332,7 @@ div.je-souhaite div p {
   color: var(--background-color);
   margin-left: 3rem;
   margin-right: 3rem;
+  letter-spacing: 0.3rem;
 }
 
 .d-flex-center-center {
@@ -441,7 +433,6 @@ footer {
 }
 
 .partners-container {
-  width: 80rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -487,7 +478,7 @@ footer button {
 header {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.2rem;
+  
 }
 
 
@@ -623,10 +614,6 @@ header {
     width: 8rem;
     height: 8rem;
   }
-
- 
-  
-
 }
 
 @media(max-width: 970px) {
@@ -654,6 +641,10 @@ header {
 @media(max-width: 720px) {
   .chiffres-titres {
     flex-direction: column;
+  }
+
+  .description-accueil p {
+    text-align: center;
   }
 
   
