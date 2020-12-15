@@ -664,8 +664,8 @@ header {
     height: 40rem;
   }
 
-  .description-chiffres {
-    max-width: 56rem;
-  }    
+  div.chiffres {
+    width: auto;
+  }
   
 }
