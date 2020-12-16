@@ -12,6 +12,12 @@ h1, p {
   text-align: center;
 }
 
+.sticky {
+  position: fixed;
+  background-color: var(--background-color);
+  border-bottom: 0.1rem solid rgba(48, 48, 48, 0.1);
+}
+
 nav {
   font-size: 1.8rem;
   box-shadow: 0.0rem 0.0rem 0.0rem 0.0rem rgba(0, 0, 0, 0.2);
@@ -56,6 +62,7 @@ header {
   height: 3rem;
   justify-content: flex-start;
   align-content: center;
+  margin-top: 1rem;
 }
 
 .logo img {
@@ -80,12 +87,16 @@ header {
   margin-left: 1rem;
 }
 
+.social-network img:hover {
+  filter: invert(0.1);
+}
+
 .search-box input {
   width: 220px;
   border: 1px solid var(--primary-color);
   height: 3.5rem;
   padding: 0 3rem 0 1.2rem;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   color: var(--primary-color);
   background: #f5f8fa url("images/search.svg") no-repeat 190px center;
 }
@@ -122,12 +133,15 @@ header {
 }
 
 .dropdownmenu li a:hover {
-  font-weight: bold;
+  background-color: rgba(39, 76, 82, 0.1);
+  border-radius: 1.5rem;
 }
 
 .dropdownmenu li:hover a>first-child {
   border: none;
 }
+
+
 #submenu {
 	left: 0;
 	opacity: 0;
@@ -139,7 +153,7 @@ header {
 }
 li:hover ul#submenu {
 	opacity: 1;	
-	visibility: visible;
+  visibility: visible;
 }
 
 #submenu li {
@@ -149,6 +163,7 @@ li:hover ul#submenu {
 #submenu a{
   border: none;
   width: 30rem;
+  border-radius: 0rem;
 }
 
 #submenu a:hover {
@@ -199,13 +214,10 @@ div.banner div p {
   width: 1360px;
 }
 
+.description-chiffres {
+  margin-top: 3rem;
+}
 
-
-
-/*logo-description*/
-/*.columns2 {
-  display: flex;
-}*/
 
 div.chiffres {
   width: 60rem;
@@ -221,7 +233,6 @@ div.chiffres {
   text-align: left;
 }
 
-/*fin de logo-description*/
 
 .margin1rem {
   margin: 1rem;
@@ -411,6 +422,10 @@ img {
   margin-bottom: 3rem;
 }
 
+.margin-bottom1 {
+  margin-bottom: 1rem;
+}
+
 .font-size6 {
   font-size: 6rem;
 }
@@ -461,6 +476,10 @@ footer button {
   width: 20rem;
 }
 
+footer button:hover {
+  color: var(--yellow-color);
+}
+
 .background-bleu {
     background-color: var(--secondary-color);
     width: 100%;
@@ -489,7 +508,8 @@ header {
   }
 
   .logo img {
-    height: 9rem;
+    height: 11rem;
+    margin-left: 1rem;
   }
  
 }
@@ -526,10 +546,12 @@ header {
   
   .logo {
     height: 8rem;
+    
   }
 
   .logo img {
     height: 8rem;
+    
   }
   
   nav {
