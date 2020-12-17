@@ -305,15 +305,7 @@ div.je-souhaite div p {
   stroke: var(--yellow-color);
 }
 
-.circles-box {
-  max-width: 90rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  
-}
-
-.circles-box div {
+.circle-box {
   margin: 1rem;
   height: 8rem;
   background-image: linear-gradient(rgba(48, 48, 48, 0.5), rgba(48, 48, 48, 0.5)),
@@ -325,20 +317,21 @@ div.je-souhaite div p {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  max-width: 40rem;
   
 }
 
-.circles-box div:hover  {
+.circle-box:hover  {
   background-image: none;
   background-color: var(--secondary-color);
 }
 
-.circles-box .active {
+.circle-box .active {
   background-image: none;
   background-color: var(--secondary-color);
 }
 
-.circles-box div p {
+.circle-box p {
   font-size: 2rem;
   color: var(--background-color);
   margin-left: 3rem;
@@ -356,6 +349,16 @@ div.je-souhaite div p {
 .f-direction-column {
   flex-direction: column;
 }
+
+.f-direction-row {
+  flex-direction: row;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+
 
 .d-flex {
   display: flex;
@@ -497,7 +500,6 @@ footer button:hover {
 header {
   display: flex;
   justify-content: space-between;
-  
 }
 
 

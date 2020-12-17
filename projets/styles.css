@@ -29,10 +29,6 @@
     text-align: left;
 }
 
-.description-project p::first-line {
-    text-indent: 6rem; 
-}
-
 .size {
     width: 1200px;
 }

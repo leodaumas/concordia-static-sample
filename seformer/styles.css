@@ -1,0 +1,97 @@
+
+.description-seformer p {
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+
+
+.nosreseaux h1 {
+  margin: 2rem 0 3rem 0;
+}
+
+.nosreseaux {
+  margin-bottom: 3rem;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 0.1rem solid rgba(48, 48, 48, 0.1);
+  box-shadow: 5px 10px 18px rgba(48, 48, 48, 0.2);
+  border-radius: 1.5rem;
+  min-height: 40rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 5rem;
+  margin-top: 2rem; 
+  transition: all .2s ease-in-out; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+.img-card {
+  width: 30rem; /*Foto 16:9*/
+  height: 17rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background-image: url("../images/foto2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-style {
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: var(--background-color);
+  margin-top: -2rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  margin-top: -2rem;
+}
+
+.card-content p {
+  text-align: left;
+  margin: 1rem;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.img-local {
+  display: flex;
+  align-self: center;
+}
+
+.img-local img {
+  height: 3rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
