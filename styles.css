@@ -692,5 +692,10 @@ header {
   div.chiffres {
     width: auto;
   }
+
+  .partner-img {
+    width: 10rem;
+    margin: 1rem;
+  }
   
 }
