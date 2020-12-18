@@ -36,12 +36,6 @@
   margin: 3rem; 
 }
 
-.nosreseaux-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .card:hover {
   transform: scale(1.05); 
 }
