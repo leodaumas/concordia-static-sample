@@ -74,7 +74,6 @@ header {
   margin-left: 1rem;
   align-items: center;
   padding-right: 1rem;
-  margin-top: 2rem;
 }
 
 .search-menu div {
@@ -128,7 +127,7 @@ border-color: var(--secondary-color);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .dropdownmenu li {
@@ -523,6 +522,12 @@ footer button:hover {
 header {
   display: flex;
   justify-content: space-between;
+}
+
+.stickyMenu {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 
