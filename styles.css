@@ -127,7 +127,7 @@ border-color: var(--secondary-color);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin: 0rem 0 1.5rem 0;
+  margin: 1rem 0 1.5rem 0;
 }
 
 .dropdownmenu li {
