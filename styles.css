@@ -94,15 +94,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primary-color);
   padding: 0 1rem ;
   margin-left: 1rem;
+  font-size: 1.6rem;
 }
 
 .button-je-trouve:hover {
-color: var(--background-color);
-background-color: var(--secondary-color);
-border-color: var(--secondary-color);
+background-color: var(--violet-color);
 }
 
 .social-network {
