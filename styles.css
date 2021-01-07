@@ -88,7 +88,7 @@ header {
 
 .button-je-trouve {
   border: none;
-  border-radius: 1.3rem;
+  border-radius: 1.5rem;
   width: auto;
   height: 3.5rem;
   display: flex;
@@ -127,7 +127,7 @@ border-color: var(--secondary-color);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin: 1rem 0 1rem 0;
+  margin: 0rem 0 1.5rem 0;
 }
 
 .dropdownmenu li {
